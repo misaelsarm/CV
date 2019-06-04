@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #f2f2f2;
+  font-family: 'Dosis', sans-serif; }
+
+.top {
+  background: #028090;
+  width: 90%;
+  max-width: 1000px;
+  height: 250px;
+  margin: auto;
+  padding-top: 20px; }
+  .top .contenido {
+    width: 90%;
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .top .contenido .thumb {
+      width: 120px;
+      background: red; }
+      .top .contenido .thumb img {
+        width: 100%;
+        vertical-align: top;
+        margin: 20px; }
+    .top .contenido .nombre {
+      font-family: 'Dosis', sans-serif;
+      font-weight: 300;
+      font-size: 50px;
+      padding: 10px 30px; }
+    .top .contenido .descripcion {
+      font-family: 'Dosis', sans-serif;
+      font-weight: 300;
+      font-size: 25px;
+      padding: 0 30px; }
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  background: white;
+  margin: auto; }
+  .contenedor .contenedor-secciones {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    padding-bottom: 30px; }
+    .contenedor .contenedor-secciones .secciones {
+      width: 45%;
+      background: white;
+      margin: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      border-radius: 5px; }
+      .contenedor .contenedor-secciones .secciones .titulo {
+        font-size: 30px;
+        color: grey;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 400;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+      .contenedor .contenedor-secciones .secciones .texto {
+        margin: 10px;
+        text-align: justify; }
+
+.bottom {
+  width: 90%;
+  height: 200px;
+  background: #009b72;
+  margin: auto;
+  max-width: 1000px; }
+
+/*# sourceMappingURL=cv.css.map */
