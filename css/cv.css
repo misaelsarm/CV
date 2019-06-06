@@ -18,18 +18,20 @@ body {
     width: 90%;
     background: white;
     max-width: 1000px;
-    margin: 0 auto;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; }
     .top .contenido .thumb {
-      width: 120px;
-      background: red; }
+      width: 200px; }
       .top .contenido .thumb img {
         width: 100%;
         vertical-align: top;
-        margin: 20px; }
+        padding: 20px; }
     .top .contenido .nombre {
       font-family: 'Dosis', sans-serif;
       font-weight: 300;
@@ -40,6 +42,9 @@ body {
       font-weight: 300;
       font-size: 25px;
       padding: 0 30px; }
+    .top .contenido .contacto ul li {
+      margin: 20px;
+      list-style: none; }
 
 .contenedor {
   width: 90%;
@@ -51,7 +56,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 90%;
     margin: auto;
     max-width: 1000px;
@@ -60,7 +65,7 @@ body {
       width: 45%;
       background: white;
       margin: 20px;
-      border: 1px solid rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(0, 0, 0, 0.1);
       padding: 10px;
       border-radius: 5px; }
       .contenedor .contenedor-secciones .secciones .titulo {
@@ -68,7 +73,7 @@ body {
         color: grey;
         font-family: 'Dosis', sans-serif;
         font-weight: 400;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
       .contenedor .contenedor-secciones .secciones .texto {
         margin: 10px;
         text-align: justify; }
@@ -79,5 +84,35 @@ body {
   background: #009b72;
   margin: auto;
   max-width: 1000px; }
+
+@media screen and (max-width: 800px) {
+  .top .contenido {
+    background: yellow;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center; }
+    .top .contenido .thumb {
+      width: 100px; }
+    .top .contenido .nombre {
+      font-size: 20px; } }
+@media screen and (max-width: 600px) {
+  .contenedor .contenedor-secciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    padding-bottom: 30px; }
+    .contenedor .contenedor-secciones .secciones {
+      width: 25%;
+      background: white;
+      margin: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      border-radius: 5px; } }
 
 /*# sourceMappingURL=cv.css.map */

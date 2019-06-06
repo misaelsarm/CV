@@ -1,95 +1,147 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #f2f2f2;
-    font-family: 'Dosis', sans-serif;
-}
-
-.top {
-    background: #028090;
-    width: 90%;
-    max-width: 1000px;
-    height: 250px;
-    margin: auto;
-    padding-top: 20px;
-    .contenido {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: #f2f2f2;
+        font-family: 'Dosis', sans-serif;
+    }
+    
+    .top {
+        background: #028090;
         width: 90%;
-        background: white;
         max-width: 1000px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .thumb {
-            width: 120px;
-            background: red;
-            img {
-                width: 100%;
-                vertical-align: top;
-                margin: 20px;
+        height: 250px;
+        margin: auto;
+        padding-top: 20px;
+        .contenido {
+            width: 90%;
+            background: white;
+            max-width: 1000px;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            .thumb {
+                width: 200px;
+                img {
+                    width: 100%;
+                    vertical-align: top;
+                    padding: 20px;
+                }
+            }
+            .nombre {
+                font-family: 'Dosis', sans-serif;
+                font-weight: 300;
+                font-size: 50px;
+                padding: 10px 30px;
+            }
+            .descripcion {
+                font-family: 'Dosis', sans-serif;
+                font-weight: 300;
+                font-size: 25px;
+                padding: 0 30px;
+            }
+            .contacto {
+                ul {
+                    li {
+                        margin: 20px;
+                        list-style: none;
+                    }
+                }
             }
         }
-        .nombre {
-            font-family: 'Dosis', sans-serif;
-            font-weight: 300;
-            font-size: 50px;
-            padding: 10px 30px;
-        }
-        .descripcion {
-            font-family: 'Dosis', sans-serif;
-            font-weight: 300;
-            font-size: 25px;
-            padding: 0 30px;
+    }
+    
+    .contenedor {
+        width: 90%;
+        max-width: 1000px;
+        background: white;
+        margin: auto;
+        .contenedor-secciones {
+            background: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            max-width: 1000px;
+            padding-bottom: 30px;
+            .secciones {
+                width: 45%;
+                background: white;
+                margin: 20px;
+                border: 1px solid rgba(#000, 0.1);
+                padding: 10px;
+                border-radius: 5px;
+                .titulo {
+                    font-size: 30px;
+                    color: grey;
+                    font-family: 'Dosis', sans-serif;
+                    font-weight: 400;
+                    border-bottom: 1px solid rgba(#000, 0.1);
+                }
+                .texto {
+                    margin: 10px;
+                    text-align: justify;
+                }
+            }
         }
     }
-}
-
-.contenedor {
-    width: 90%;
-    max-width: 1000px;
-    background: white;
-    margin: auto;
-    .contenedor-secciones {
-        background: white;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    
+    .bottom {
         width: 90%;
+        height: 200px;
+        background: #009b72;
         margin: auto;
         max-width: 1000px;
-        padding-bottom: 30px;
-        .secciones {
-            width: 45%;
-            background: white;
-            margin: 20px;
-            border: 1px solid rgba(#000, 0.3);
-            padding: 10px;
-            border-radius: 5px;
-            .titulo {
-                font-size: 30px;
-                color: grey;
-                font-family: 'Dosis', sans-serif;
-                font-weight: 400;
-                border-bottom: 1px solid rgba(#000, 0.3);
-            }
-            .texto {
-                margin: 10px;
-                text-align: justify;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .top {
+            .contenido {
+                background: yellow;
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                justify-content: space-between;
+                align-items: center;
+                .thumb {
+                    width: 100px;
+                }
+                .nombre {
+                    font-size: 20px;
+                }
             }
         }
     }
-}
-
-.bottom {
-    width: 90%;
-    height: 200px;
-    background: #009b72;
-    margin: auto;
-    max-width: 1000px;
-}
+    
+    @media screen and (max-width: 600px) {
+        .contenedor {
+            .contenedor-secciones {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 90%;
+                margin: auto;
+                max-width: 1000px;
+                padding-bottom: 30px;
+                .secciones {
+                    width: 25%;
+                    background: white;
+                    margin: 20px;
+                    border: 1px solid rgba(#000, 0.3);
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
